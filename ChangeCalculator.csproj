@@ -5,4 +5,10 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="ChangeCalculator.Tests\**" />
+    <EmbeddedResource Remove="ChangeCalculator.Tests\**" />
+    <None Remove="ChangeCalculator.Tests\**" />
+  </ItemGroup>
+
 </Project>

@@ -7,8 +7,10 @@ namespace ChangeCalculator.Helpers
     {
         public string EvaluateCurrencyValue(string inputAmount)
         {
+            inputAmount = inputAmount.Trim();
+
             if (inputAmount.StartsWith("£"))
-                return inputAmount.Replace("£", "");
+                return inputAmount.Replace("£", "").Trim();
 
             if (inputAmount.EndsWith("p"))
             {
